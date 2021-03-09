@@ -15,9 +15,7 @@ const Item = ({title, indexNumber}) => (
     <Text style={{fontSize: 10 * indexNumber}}>{title}</Text>
   </View>
 );
-function add(a, b) {
-  return a + b;
-}
+const add = (a, b) => a + b;
 
 const App = () => {
   const result = DATA.reduce(add, 0);
